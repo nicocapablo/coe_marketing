@@ -480,9 +480,7 @@ function mostrarMenuInicial() {
     "bot"
   );
   mostrarMensaje(
-    "A) Sentencias (Verdadero / Falso)\nB) 
-    o 
-    Mini-test (3 opciones)",
+    "A) Sentencias (Verdadero / Falso)\nB)\n      o \n Mini-test (3 opciones)",
     "bot"
   );
 
@@ -512,7 +510,7 @@ function iniciarMinitest() {
   puntuacion = 0;
 
   barajar(preguntasMinitest);
-  preguntasParaEsteTest = preguntasMinitest.slice(0, 20);
+  preguntasParaEsteTest = preguntasMinitest.slice(0, 30);
 
   configurarBoton("btnA", "A", () => responder("a"));
   configurarBoton("btnB", "B", () => responder("b"));
@@ -542,7 +540,7 @@ function responder(opcion) {
     );
   } else {
     mostrarMensaje(
-      `❌ Incorrecto. La correcta era ${p.correcta.toUpperCase()}`,
+      `❌ Incorrecte. La correcta era ${p.correcta.toUpperCase()}`,
       "bot"
     );
   }
@@ -554,7 +552,7 @@ function responder(opcion) {
   } else {
     setTimeout(() => {
       mostrarMensaje(
-        `🏁 Resultado final: ${puntuacion} / ${preguntasParaEsteTest.length}`,
+        `🏁 Resultat final: ${puntuacion} / ${preguntasParaEsteTest.length}`,
         "bot"
       );
       desactivarBotones();
@@ -584,6 +582,7 @@ function desactivarBotones() {
 // =======================
 
 document.addEventListener("DOMContentLoaded", mostrarMenuInicial);
+
 
 
 
