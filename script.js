@@ -480,7 +480,7 @@ function mostrarMenuInicial() {
     "bot"
   );
   mostrarMensaje(
-    "A) Sentencias (Verdadero / Falso)\nB)\n      o \n Mini-test (3 opciones)",
+    "A) Sentencias (Verdadero / Falso)\n      o \n B)Mini-test (3 opciones)",
     "bot"
   );
 
@@ -582,6 +582,7 @@ function desactivarBotones() {
 // =======================
 
 document.addEventListener("DOMContentLoaded", mostrarMenuInicial);
+
 
 
 
