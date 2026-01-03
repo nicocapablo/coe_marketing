@@ -476,7 +476,7 @@ function mostrarMensaje(texto, tipo) {
 
 function mostrarMenuInicial() {
   mostrarMensaje(
-    "👋 Hola, bienvenido al Tema 1.\n\n¿Qué quieres practicar?",
+    "👋 Hola, bienvenido al Tema T611.\n\n¿Qué quieres practicar?",
     "bot"
   );
   mostrarMensaje(
@@ -582,6 +582,7 @@ function desactivarBotones() {
 // =======================
 
 document.addEventListener("DOMContentLoaded", mostrarMenuInicial);
+
 
 
 
