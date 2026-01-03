@@ -480,12 +480,14 @@ function mostrarMenuInicial() {
     "bot"
   );
   mostrarMensaje(
-    "A) Sentencias (Verdadero / Falso)\nB) Mini-test (3 opciones)",
+    "A) Sentencias (Verdadero / Falso)\nB) 
+    o 
+    Mini-test (3 opciones)",
     "bot"
   );
 
-  configurarBoton("btnA", "Sentencias", iniciarSentencias);
-  configurarBoton("btnB", "Mini-test", iniciarMinitest);
+  configurarBoton("btnA", "A", iniciarSentencias);
+  configurarBoton("btnB", "B", iniciarMinitest);
   ocultarBotones(["btnC", "btnD"]);
 }
 
@@ -582,5 +584,6 @@ function desactivarBotones() {
 // =======================
 
 document.addEventListener("DOMContentLoaded", mostrarMenuInicial);
+
 
 
